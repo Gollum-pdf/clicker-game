@@ -1,5 +1,17 @@
 #sword{
 position: absolute;
 top: 300px;
-transform:rotate(135deg)
+transform:rotate(135deg);
 }
+
+#troops{
+   position: absolute;
+   left: 170px;
+   top: 20px;
+   font-size: 50px;
+}
+
+body {
+    background-color: rgb(26, 39, 9);
+}
+
