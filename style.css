@@ -12,6 +12,22 @@ transform:rotate(135deg);
    color: white;
 }
 
+#dtpc {
+    position: absolute;
+    left: 500px;
+    top: 700px;
+    font-size: 30px;
+    color: white;
+}
+
+#dtps {
+    position: absolute;
+    left: 500px;
+    top: 800px;
+    font-size: 30px;
+    color: white;
+}
+
 #milk {
     z-index: 1;
     width: 200px;
@@ -28,6 +44,7 @@ transform:rotate(135deg);
     top:120px;
     padding: 5px;
     font-size: 30px;
+    width: 320px;
 }
 
 body {
