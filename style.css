@@ -12,7 +12,7 @@ transform:rotate(135deg);
    color: white;
 }
 
-#dtpc {
+#tpc {
     position: absolute;
     left: 500px;
     top: 700px;
@@ -37,7 +37,7 @@ transform:rotate(135deg);
     position: absolute;
 }
 
-#buy {
+#archer {
     background-color: white;
     position: absolute;
     left: 1500px;
@@ -45,6 +45,16 @@ transform:rotate(135deg);
     padding: 5px;
     font-size: 30px;
     width: 320px;
+    user-select: none;
+}
+
+#buy-upgrade {
+position: absolute;
+color: wheat;
+left: 1400px;
+top: 0px;
+width: 500px;
+bottom: 0px;
 }
 
 body {
