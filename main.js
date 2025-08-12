@@ -2,12 +2,12 @@ let troops = 0;
 let tpc = 1;
 let tps = 0;
 let costcav = 100;
-let upgrades = ["arrow","cav","treb","ae","cast"];
+let upgrades = ["archer","cav","treb","ae","cast"];
 let upgradecost = [10, 100, 500, 1000, 5000];
 let upgradefunc = [function() {tpc++},function() {tps++}];
 let upgradecostincrease = [15,50,500,5000,50000]
 let hover = false;
-let elIds = ["troops", "archer","tpc"];
+let elIds = ["troops","archer","tpc","cav","tps"];
 function click(){
     troops += tpc;
 }
@@ -15,6 +15,8 @@ function main(){
     document.getElementById("troops").innerHTML = ("Troops: " +troops);
     document.getElementById("archer").innerHTML = ("Archer<br> +1 troop per click<br> Cost = " + upgradecost[0]);
     document.getElementById("tpc").innerHTML = ("Troops per click: " +tpc);
+    document.getElementById("cav").innerHTML = ("Cavalry<br> +1 troops per second<br> Cost = " + upgradecost[1]);
+    document.getElementById("tps").innerHTML = ("Troops per Second = " + tps);
     for (let i=0; i<elIds.length; i++){
         try{
             if(document.getElementById(elIds[i]).matches(':hover')){
@@ -31,8 +33,8 @@ document.getElementById("milk").addEventListener("click", click);
 function buyupgrade(){
     for (let i=0; i<upgrades.length; i++){
        if(upgrades[i] === hover) {
-        if(score>=upgradecost[i]){
-            score-= upgradecost[i];
+        if(troops>=upgradecost[i]){
+            troops-= upgradecost[i];
                 upgradefunc[i]();
                 upgradecost.splice(i,1,upgradecost[i] + upgradecostincrease[i]);
         }

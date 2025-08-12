@@ -40,8 +40,17 @@ transform:rotate(135deg);
 #archer {
     background-color: white;
     position: absolute;
-    left: 1500px;
     top:120px;
+    padding: 5px;
+    font-size: 30px;
+    width: 320px;
+    user-select: none;
+}
+
+#cav {
+    background-color: white;
+    position: absolute;
+    top:250px;
     padding: 5px;
     font-size: 30px;
     width: 320px;
@@ -50,11 +59,17 @@ transform:rotate(135deg);
 
 #buy-upgrade {
 position: absolute;
-color: wheat;
-left: 1400px;
 top: 0px;
-width: 500px;
-bottom: 0px;
+width: 400px;
+height: 900px;
+overflow-y: scroll;
+left: 1500px;
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+#buy-upgrade::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
 }
 
 body {
