@@ -4,10 +4,10 @@ let tps = 0;
 let costcav = 100;
 let upgrades = ["archer","cav","treb","ae","cast"];
 let upgradecost = [10, 100, 500, 1000, 5000];
-let upgradefunc = [function() {tpc++},function() {tps++}];
+let upgradefunc = [function() {tpc++},function() {tps++}, function() {{tpc+=10}}];
 let upgradecostincrease = [15,50,500,5000,50000]
 let hover = false;
-let elIds = ["troops","archer","tpc","cav","tps"];
+let elIds = ["troops","archer","tpc","cav","tps", "treb"];
 function click(){
     troops += tpc;
 }
@@ -16,7 +16,8 @@ function main(){
     document.getElementById("archer").innerHTML = ("Archer<br> +1 troop per click<br> Cost = " + upgradecost[0]);
     document.getElementById("tpc").innerHTML = ("Troops per click: " +tpc);
     document.getElementById("cav").innerHTML = ("Cavalry<br> +1 troops per second<br> Cost = " + upgradecost[1]);
-    document.getElementById("tps").innerHTML = ("Troops per Second = " + tps);
+    document.getElementById("tps").innerHTML = ("Troops per Second: " + tps);
+    document.getElementById("treb").innerHTML = ("Trebuchet<br> +10 troops per click<br> Cost = " + upgradecost[2]);
     for (let i=0; i<elIds.length; i++){
         try{
             if(document.getElementById(elIds[i]).matches(':hover')){

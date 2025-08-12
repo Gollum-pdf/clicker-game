@@ -2,6 +2,7 @@
 position: absolute;
 top: 300px;
 transform:rotate(135deg);
+user-select: none;
 }
 
 #troops{
@@ -10,6 +11,7 @@ transform:rotate(135deg);
    top: 20px;
    font-size: 50px;
    color: white;
+   user-select: none;
 }
 
 #tpc {
@@ -18,14 +20,16 @@ transform:rotate(135deg);
     top: 700px;
     font-size: 30px;
     color: white;
+    user-select: none;
 }
 
-#dtps {
+#tps {
     position: absolute;
     left: 500px;
     top: 800px;
     font-size: 30px;
     color: white;
+    user-select: none;
 }
 
 #milk {
@@ -51,6 +55,16 @@ transform:rotate(135deg);
     background-color: white;
     position: absolute;
     top:250px;
+    padding: 5px;
+    font-size: 30px;
+    width: 320px;
+    user-select: none;
+}
+
+#treb {
+    background-color: white;
+    position: absolute;
+    top:380px;
     padding: 5px;
     font-size: 30px;
     width: 320px;
