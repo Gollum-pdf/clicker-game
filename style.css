@@ -71,6 +71,26 @@ user-select: none;
     user-select: none;
 }
 
+#ae {
+    background-color: white;
+    position: absolute;
+    top:510px;
+    padding: 5px;
+    font-size: 30px;
+    width: 320px;
+    user-select: none;
+}
+
+#cast {
+    background-color: white;
+    position: absolute;
+    top:640px;
+    padding: 5px;
+    font-size: 30px;
+    width: 320px;
+    user-select: none;
+}
+
 #buy-upgrade {
 position: absolute;
 top: 0px;
