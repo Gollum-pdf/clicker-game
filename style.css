@@ -17,7 +17,7 @@ user-select: none;
 #tpc {
     position: absolute;
     left: 500px;
-    top: 700px;
+    top: 125px;
     font-size: 30px;
     color: white;
     user-select: none;
@@ -26,10 +26,55 @@ user-select: none;
 #tps {
     position: absolute;
     left: 500px;
-    top: 800px;
+    top: 225px;
     font-size: 30px;
     color: white;
     user-select: none;
+}
+
+#na {
+    position: absolute;
+    left: 500px;
+    top: 600px;
+    color: white;
+    user-select: none;
+    font-size: 30px;
+}
+
+#nc {
+    position: absolute;
+    left: 500px;
+    top: 650px;
+    color: white;
+    user-select: none;
+    font-size: 30px;
+}
+
+#nt {
+    position: absolute;
+    left: 500px;
+    top: 700px;
+    color: white;
+    user-select: none;
+    font-size: 30px;
+}
+
+#ne {
+    position: absolute;
+    left: 500px;
+    top: 750px;
+    color: white;
+    user-select: none;
+    font-size: 30px;
+}
+
+#nk {
+    position: absolute;
+    left: 500px;
+    top: 800px;
+    color: white;
+    user-select: none;
+    font-size: 30px;
 }
 
 #milk {
